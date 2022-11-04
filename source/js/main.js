@@ -1,5 +1,12 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import './modules/footer-accordion';
+import './modules/consult-button-content';
+import './modules/toggle-button';
+import './modules/goods-services-subtitle-content';
+import './modules/scroll';
+import './modules/modal-open-close';
+import './modules/phone-mask';
 
 // ---------------------------------
 

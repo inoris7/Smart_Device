@@ -1,0 +1,161 @@
+.main-form__subtitle {
+  margin: 0;
+
+  @extend %roboto-condensed-400;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+
+.main-form__slogan {
+  display: block;
+  font-size: 14px;
+  line-height: 18.82px;
+  margin-bottom: 40px;
+}
+
+.main-form__contacts {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-form__field-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-form__field {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 15px;
+  background-color: rgba(4, 20, 39, 0.15);
+}
+
+.main-form__field:focus {
+  border: none;
+  outline: none;
+}
+
+.main-form__field::placeholder,
+.main-form__question-field::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.main-form__question-field {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 25px 15px 35px;
+  background-color: rgba(4, 20, 39, 0.15);
+}
+
+.main-form__submit-button {
+  width: 100%;
+
+  @extend %roboto-condensed-700;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  background-color: #041427;
+  padding: 15px 25px;
+  margin-bottom: 40px;
+}
+
+.main-form__checkbox-mark {
+  display: block;
+  position: relative;
+  box-sizing: content-box;
+  padding: 7.5px;
+  margin-right: 11px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+}
+
+.main-form__checkbox-label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main-form__checkbox-field:checked ~ .main-form__checkbox-mark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/svg/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: $vp-768) {
+  .main-form__subtitle {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .main-form__slogan {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  .main-form__contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .main-form__field-label {
+    flex-grow: 1;
+    margin-right: 30px;
+  }
+
+  .main-form__field-label:last-of-type {
+    margin-right: 0;
+  }
+
+  .main-form__field {
+    width: 100%;
+  }
+
+  .main-form__question-field {
+    margin-bottom: 35px;
+    padding: 32px 15px 35px;
+  }
+
+  .main-form__footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .main-form__submit-button {
+    width: 265px;
+    margin-right: 85px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $vp-1024) {
+  .main-form__wrapper {
+    max-width: 585px;
+  }
+}

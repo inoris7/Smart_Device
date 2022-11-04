@@ -1,0 +1,29 @@
+.page {
+  height: 100%;
+  word-break: break-word;
+}
+
+.page__body {
+
+  @extend %pt-mono-400;
+  min-width: 320px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  color: #041827;
+}
+
+@media (min-width: $vp-768) {
+  .page__body {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $vp-1024) {
+  .page__body {
+    min-width: 1024px;
+  }
+}

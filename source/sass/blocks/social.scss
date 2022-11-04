@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social__link {
+  display: block;
+  padding: 5px;
+  margin-right: 15px;
+  max-height: 40px;
+}
+
+.social__item:last-of-type a {
+  margin-right: 0;
+}

@@ -1,0 +1,55 @@
+.feedback {
+  position: relative;
+  background-color:#00B3FF;
+}
+
+.feedback__wrapper {
+  padding: 50px 25px 90px;
+  color: #FFFFFF;
+}
+
+.feedback__paper-plane {
+  display: none;
+  width: 510px;
+  height: 285px;
+  background-image: url("../img/paper-plane.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 40px;
+}
+
+@media (min-width: $vp-768) {
+  .feedback__wrapper {
+    padding: 50px 50px 125px;
+  }
+}
+
+@media (min-width: $vp-1024) {
+  .feedback::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(50% 0, 0 0, 0 100%);
+    background-color: rgba(4, 24, 39, 0.5);
+  }
+
+  .feedback__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 170px 50px 250px;
+  }
+
+  .feedback__paper-plane {
+    display: block;
+    z-index: 2;
+  }
+}

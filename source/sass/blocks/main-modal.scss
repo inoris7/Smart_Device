@@ -1,0 +1,145 @@
+.main-modal__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 16, 27, 0.7);
+  z-index: 10;
+}
+
+.main-modal__container--closed {
+  display: none;
+}
+
+.main-modal {
+  position: relative;
+  width: 500px;
+  height: fit-content;
+  margin-top: 146px;
+  padding: 40px;
+  background-color: #00B3FF;
+}
+
+.main-modal__close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  background-image: url('../img/svg/close-button.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.main-modal__subtitle {
+  margin: 0;
+
+  @extend %roboto-condensed-400;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.main-modal__slogan {
+  display: block;
+  font-size: 14px;
+  line-height: 18.82px;
+  margin-bottom: 40px;
+  color: #FFFFFF;
+}
+
+.main-modal__contacts {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-modal__field-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-modal__field {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 15px;
+  background-color: rgba(4, 20, 39, 0.15);
+}
+
+.main-modal__field:focus {
+  border: none;
+  outline: none;
+}
+
+.main-modal__field::placeholder,
+.main-modal__question-field::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.main-modal__question-field {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 25px 15px 35px;
+  background-color: rgba(4, 20, 39, 0.15);
+}
+
+.main-modal__submit-button {
+  width: 100%;
+  @extend %roboto-condensed-700;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  background-color: #041427;
+  padding: 15px 25px;
+  margin-bottom: 40px;
+}
+
+.main-modal__checkbox-mark {
+  display: block;
+  position: relative;
+  box-sizing: content-box;
+  padding: 7.5px;
+  margin-right: 11px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+}
+
+.main-modal__checkbox-label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main-modal__checkbox-field:checked ~ .main-modal__checkbox-mark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/svg/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -18,7 +18,25 @@ $color-torch-red:                   #ff1553;
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography
-// ---------------------------------
+%roboto-500 {
+  font-family: "Roboto", "Arial Narrow", sans-serif;
+  font-weight: 500;
+}
+
+%pt-mono-400 {
+  font-family: "PT_mono", "Arial Narrow", sans-serif;
+  font-weight: 400;
+}
+
+%roboto-condensed-400 {
+  font-family: "Roboto_condensed", "Arial Narrow", sans-serif;
+  font-weight: 400;
+}
+
+%roboto-condensed-700 {
+  font-family: "Roboto_condensed", "Arial Narrow", sans-serif;
+  font-weight: 700;
+}
 
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
