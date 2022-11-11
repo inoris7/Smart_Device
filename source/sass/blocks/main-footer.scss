@@ -56,7 +56,11 @@
   right: 27px;
   width: 15px;
   height: 15px;
-  background-image: url("../img/minus.png");
+  background-image: url("../img/minus.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/minus-2x.webp");
+  }
 }
 
 .main-footer__accordion--closed::after {
@@ -65,7 +69,11 @@
   right: 27px;
   width: 15px;
   height: 15px;
-  background-image: url("../img/plus.png");
+  background-image: url("../img/plus.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/plus-2x.webp");
+  }
 }
 
 .main-footer__links-list {

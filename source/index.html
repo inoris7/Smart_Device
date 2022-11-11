@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
     <title>Smart device</title>
-    <link rel="preload" href="./css/style.min.css" as="style">
     <link rel="preload" href="./js/main.min.js" as="script">
     <link rel="preload" href="./fonts/roboto-regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
@@ -15,7 +14,7 @@
     <link rel="icon" href="./img/svg/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="page__body">
+  <body>
 
     <div class="page__body">
       <header class="main-header">
@@ -335,7 +334,7 @@
             <fieldset class="main-modal__contacts">
               <label class="main-modal__field-label">
                 <span class="visually-hidden">Имя</span>
-                <input class="main-modal__field" type="text" name="user-name" placeholder="Имя" autocomplete="off" required>
+                <input id="modal-name-field" class="main-modal__field" type="text" name="user-name" placeholder="Имя" autocomplete="off" required>
               </label>
               <label class="main-modal__field-label">
                 <span class="visually-hidden">Телефон</span>

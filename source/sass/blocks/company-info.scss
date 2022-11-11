@@ -54,11 +54,10 @@
 
 .company-info__logo-numbers {
   writing-mode: vertical-lr;
-
   @extend %roboto-condensed-700;
   font-size: 150px;
   line-height: 150px;
-  background-image: url("../img/2022-background.png");
+  background-image: url("../img/2022-background.webp");
   background-position: center;
   background-size: cover;
   background-clip: text;
@@ -106,5 +105,11 @@
 
   .company-info__about {
     margin-left: 60px;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .company-info__logo-numbers {
+    background-image: url("../img/2022-background-2x.webp");
   }
 }

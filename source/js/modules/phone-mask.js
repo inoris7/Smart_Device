@@ -2,8 +2,10 @@ import Inputmask from 'inputmask';
 
 const phoneFields = document.querySelectorAll('input[type="tel"]');
 
-const im = new Inputmask({mask: '+7(999)-999-99-99', jitMasking: true});
+if (phoneFields) {
+  const im = new Inputmask({mask: '+7(999)-999-99-99', jitMasking: true});
 
-phoneFields.forEach((el) => {
-  im.mask(el);
-});
+  phoneFields.forEach((el) => {
+    im.mask(el);
+  });
+}

@@ -1,10 +1,14 @@
 .main-block {
   background-blend-mode: multiply;
   background-color: rgba(25, 32, 36, 0.5);
-  background-image: url("../img/circuit-mobile.png");
+  background-image: url("../img/circuit-mobile.webp");
   background-size: cover;
   background-position: 30%;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/circuit-mobile-2x.webp");
+  }
 }
 
 .main-block__wrapper {
@@ -49,7 +53,11 @@
 
 @media (min-width: $vp-768) {
   .main-block {
-    background-image: url("../img/circuit-tablet.png");
+    background-image: url("../img/circuit-tablet.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/circuit-tablet-2x.webp");
+    }
   }
 
   .main-block__wrapper {
@@ -76,7 +84,11 @@
 
 @media (min-width: $vp-1024) {
   .main-block {
-    background-image: url("../img/circuit-desktop.png");
+    background-image: url("../img/circuit-desktop.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/circuit-desktop-2x.webp");
+    }
   }
 
   .main-block__wrapper {

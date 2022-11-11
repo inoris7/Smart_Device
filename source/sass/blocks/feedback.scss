@@ -12,7 +12,7 @@
   display: none;
   width: 510px;
   height: 285px;
-  background-image: url("../img/paper-plane.png");
+  background-image: url("../img/paper-plane.webp");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -51,5 +51,11 @@
   .feedback__paper-plane {
     display: block;
     z-index: 2;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .feedback__paper-plane {
+    background-image: url("../img/paper-plane-2x.webp");
   }
 }
