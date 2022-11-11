@@ -38,9 +38,13 @@
   background-color: rgba(4, 20, 39, 0.15);
 }
 
+.main-form__field:hover {
+  opacity: 0.5;
+}
+
 .main-form__field:focus {
   border: none;
-  outline: none;
+  outline: 1px solid #FFFFFF;
 }
 
 .main-form__field::placeholder,
@@ -63,6 +67,14 @@
   background-color: rgba(4, 20, 39, 0.15);
 }
 
+.main-form__question-field:hover {
+  opacity: 0.5;
+}
+
+.main-form__question-field:focus {
+  outline: 1px solid #FFFFFF;
+}
+
 .main-form__submit-button {
   width: 100%;
 
@@ -75,6 +87,10 @@
   background-color: #041427;
   padding: 15px 25px;
   margin-bottom: 40px;
+}
+
+.main-form__submit-button:hover {
+  opacity: 0.5;
 }
 
 .main-form__checkbox-mark {
@@ -99,6 +115,7 @@
   width: 15px;
   height: 15px;
   background-image: url("../img/svg/checkmark.svg");
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
 }

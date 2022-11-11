@@ -47,6 +47,14 @@
   cursor: pointer;
 }
 
+.company-info__toggle-button:hover {
+  opacity: 0.5;
+}
+
+.company-info__toggle-button:active {
+  outline: 1px solid #000000;
+}
+
 .company-info__logo {
   display: none;
   transform: rotate(180deg);
@@ -58,6 +66,7 @@
   font-size: 150px;
   line-height: 150px;
   background-image: url("../img/2022-background.webp");
+  background-color: #00B2FF;
   background-position: center;
   background-size: cover;
   background-clip: text;

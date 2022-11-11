@@ -26,6 +26,10 @@
   max-height: 40px;
 }
 
+.main-header__contacts-link:hover {
+  opacity: 0.5;
+}
+
 .main-header__contacts-link span {
   display: none;
   color: #F2F5F6;
@@ -47,6 +51,14 @@
   border: 1px solid #F2F5F6;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.main-header__call-button:hover {
+  opacity: 0.5;
+}
+
+.main-header__call-button:active {
+  outline: 1px solid #FFFFFF;
 }
 
 @media (min-width: $vp-768) {

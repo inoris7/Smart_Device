@@ -57,10 +57,15 @@
   width: 15px;
   height: 15px;
   background-image: url("../img/minus.webp");
+  background-color: transparent;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/minus-2x.webp");
   }
+}
+
+.main-footer__accordion:hover::after {
+  opacity: 0.5;
 }
 
 .main-footer__accordion--closed::after {
@@ -70,10 +75,15 @@
   width: 15px;
   height: 15px;
   background-image: url("../img/plus.webp");
+  background-color: transparent;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/plus-2x.webp");
   }
+}
+
+.main-footer__accordion--closed:hover::after {
+  opacity: 0.5;
 }
 
 .main-footer__links-list {
@@ -92,6 +102,10 @@
   font-size: 14px;
   line-height: 20px;
   padding-bottom: 10px;
+}
+
+.main-footer__links-item:hover a {
+  opacity: 0.5;
 }
 
 .main-footer__links-item:last-of-type a {

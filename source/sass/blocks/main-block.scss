@@ -51,6 +51,10 @@
   cursor: pointer;
 }
 
+.main-block__consult-button:hover {
+  opacity: 0.5;
+}
+
 @media (min-width: $vp-768) {
   .main-block {
     background-image: url("../img/circuit-tablet.webp");

@@ -12,6 +12,10 @@
   max-height: 40px;
 }
 
+.social__link:hover {
+  opacity: 0.5;
+}
+
 .social__item:last-of-type a {
   margin-right: 0;
 }

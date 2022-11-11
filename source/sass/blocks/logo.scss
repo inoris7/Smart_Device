@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.logo:hover {
+  opacity: 0.3;
+}
+
 .logo--footer svg {
   margin-right: 15px;
 }
