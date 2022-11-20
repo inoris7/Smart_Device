@@ -5,17 +5,16 @@
 .goods-services__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 50px 25px 86px;
+  padding: 48px 25px 86px;
 }
 
 .goods-services__subtitle {
   margin: 0;
-  padding-bottom: 40px;
+  margin-bottom: 28px;
   color: #FFFFFF;
-
   @extend %roboto-condensed-400;
   font-size: 28px;
-  line-height: 39.38px;
+  line-height: 39.4px;
 }
 
 .goods-services__cards {
@@ -63,7 +62,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  padding: 30px 0 0 30px;
+  padding: 25px 0 0 30px;
 }
 
 .goods-services__card-link:hover {
@@ -73,7 +72,6 @@
 .goods-services__card-subtitle {
   margin: 0;
   color: #FFFFFF;
-
   @extend %roboto-condensed-400;
   font-size: 18px;
   line-height: 30px;
@@ -81,13 +79,13 @@
 
 @media (min-width: $vp-768) {
   .goods-services__wrapper {
-    padding: 60px 50px 75px;
+    padding: 50px 50px 75px;
   }
 
   .goods-services__subtitle {
-    padding-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 36px;
-    line-height: 50.63px;
+    line-height: 50.6px;
   }
 
   .goods-services__card {
@@ -123,30 +121,33 @@
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    padding: 70px 50px 140px;
+    padding: 70px 35px 140px 35px;
   }
 
   .goods-services__cards {
-    display: grid;
-    grid-template-rows: none;
-    row-gap: none;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1fr;
+    display: flex;
+    justify-content: space-between;
   }
 
   .goods-services__card {
     max-width: 350px;
+    flex-grow: 1;
     height: 650px;
+    margin-right: 20px;
     background-size: 420%;
     background-position: bottom 30% left 16%;
   }
 
-  .goods-services__card:nth-of-type(2) {
+  .goods-services__card:nth-of-type(2n) {
     background-position: bottom 30% left 48%;
   }
 
-  .goods-services__card:nth-of-type(3) {
+  .goods-services__card:nth-of-type(3n) {
     background-position: bottom 30% left 80%;
+  }
+
+  .goods-services__card:last-of-type {
+    margin-right: 0;
   }
 
   .goods-services__card-link {

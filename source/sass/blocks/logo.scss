@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.logo__image--big {
+  display: none;
+}
+
 .logo:hover {
   opacity: 0.3;
 }
@@ -10,40 +14,18 @@
   margin-right: 15px;
 }
 
-.logo__words {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  color: #F2F5F6;
-}
-
-.logo__words--footer {
-  display: flex;
-}
-
-.logo__name {
-
-  @extend %roboto-condensed-700;
-  font-size: 25px;
-  line-height: 25px;
-}
-
-.logo__slogan {
-
-  @extend %roboto-500;
-  font-size: 12px;
-  line-height: 15px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
 @media (min-width: $vp-768) {
-  .logo svg {
-    width: 55px;
-    height: 55px;
-    margin-right: 15px;
+  .logo__image--small {
+    display: none;
   }
 
-  .logo__words {
-    display: flex;
+  .logo__image--big{
+    display: block;
+    width: 215px;
+    height: 55px;
+  }
+
+  .logo {
+    margin-right: 10px;
   }
 }

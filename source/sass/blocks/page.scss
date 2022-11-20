@@ -4,7 +4,6 @@
 }
 
 .page__body {
-
   @extend %pt-mono-400;
   min-width: 320px;
   margin: 0;
@@ -16,14 +15,6 @@
   color: #041827;
 }
 
-@media (min-width: $vp-768) {
-  .page__body {
-    min-width: 768px;
-  }
-}
-
-@media (min-width: $vp-1024) {
-  .page__body {
-    min-width: 1024px;
-  }
+.page__main-container {
+  flex: 1 0 auto;
 }

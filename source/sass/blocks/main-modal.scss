@@ -1,3 +1,8 @@
+.main-modal--open {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .main-modal__container {
   position: fixed;
   top: 0;
@@ -19,6 +24,7 @@
   width: 500px;
   height: fit-content;
   margin-top: 146px;
+  margin-right: 15px;
   padding: 40px;
   background-color: #00B3FF;
 }
@@ -38,20 +44,30 @@
   cursor: pointer;
 }
 
+.main-modal__close-button:hover {
+  opacity: 0.5;
+}
+
+.main-modal__close-button:focus {
+  outline: 1px solid #FFFFFF;
+  border: none;
+}
+
 .main-modal__subtitle {
   margin: 0;
-
   @extend %roboto-condensed-400;
   font-size: 30px;
   line-height: 42px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   color: #FFFFFF;
 }
 
 .main-modal__slogan {
   display: block;
-  font-size: 14px;
-  line-height: 18.82px;
+  max-width: 380px;
+  @extend %pt-mono-400;
+  font-size: 16px;
+  line-height: 21.5px;
   margin-bottom: 40px;
   color: #FFFFFF;
 }
@@ -82,7 +98,7 @@
 
 .main-modal__field:focus {
   border: none;
-  outline: none;
+  outline: 1px solid #ffffff;
 }
 
 .main-modal__field::placeholder,
@@ -94,6 +110,7 @@
 
 .main-modal__question-field {
   width: 100%;
+  max-height: 155px;
   margin-bottom: 20px;
   outline: none;
   border: none;
@@ -105,9 +122,19 @@
   background-color: rgba(4, 20, 39, 0.15);
 }
 
+.main-modal__question-field:focus {
+  outline: 1px solid #FFFFFF;
+}
+
+.main-modal__footer-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .main-modal__submit-button {
   width: 100%;
   @extend %roboto-condensed-700;
+  letter-spacing: calc(1em / 20);
   font-size: 16px;
   color: #ffffff;
   text-transform: uppercase;
@@ -115,7 +142,8 @@
   border-radius: 3px;
   background-color: #041427;
   padding: 15px 25px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .main-modal__checkbox-mark {
@@ -124,12 +152,21 @@
   box-sizing: content-box;
   padding: 7.5px;
   margin-right: 11px;
+  margin-left: 9px;
   border: 1px solid #FFFFFF;
   border-radius: 2px;
 }
 
+.main-modal__checkbox-field:focus ~ .main-modal__checkbox-mark {
+  outline: 1px solid #000000;
+}
+
+
 .main-modal__checkbox-label {
   color: rgba(255, 255, 255, 0.8);
+  @extend %pt-mono-400;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .main-modal__checkbox-field:checked ~ .main-modal__checkbox-mark::after {

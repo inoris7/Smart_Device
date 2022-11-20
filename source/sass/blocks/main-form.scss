@@ -1,17 +1,16 @@
 .main-form__subtitle {
   margin: 0;
-
   @extend %roboto-condensed-400;
   font-size: 30px;
   line-height: 42px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .main-form__slogan {
   display: block;
   font-size: 14px;
   line-height: 18.82px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .main-form__contacts {
@@ -56,7 +55,7 @@
 
 .main-form__question-field {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   outline: none;
   border: none;
   border-radius: 3px;
@@ -75,18 +74,24 @@
   outline: 1px solid #FFFFFF;
 }
 
+.main-form__footer-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .main-form__submit-button {
   width: 100%;
-
   @extend %roboto-condensed-700;
   font-size: 16px;
+  letter-spacing: calc(1em / 20);
   color: #ffffff;
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
   background-color: #041427;
-  padding: 15px 25px;
-  margin-bottom: 40px;
+  padding: 15px 25px 12px;
+  margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .main-form__submit-button:hover {
@@ -97,8 +102,9 @@
   display: block;
   position: relative;
   box-sizing: content-box;
-  padding: 7.5px;
+  padding: 6px;
   margin-right: 11px;
+  margin-left: 5px;
   border: 1px solid #FFFFFF;
   border-radius: 2px;
 }
@@ -107,13 +113,17 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
+.main-form__checkbox-field:focus ~ .main-form__checkbox-mark {
+  outline: 1px solid #000000;
+}
+
 .main-form__checkbox-field:checked ~ .main-form__checkbox-mark::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-image: url("../img/svg/checkmark.svg");
   background-color: transparent;
   background-repeat: no-repeat;
@@ -155,24 +165,40 @@
   .main-form__question-field {
     margin-bottom: 35px;
     padding: 32px 15px 35px;
+    max-height: 155px;
   }
 
   .main-form__footer-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 0;
+  }
+
+  .main-form__checkbox-mark {
+    margin-left: 0;
   }
 
   .main-form__submit-button {
-    width: 265px;
+    max-width: 265px;
+    flex-shrink: 1;
     margin-right: 85px;
     margin-bottom: 0;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: $vp-1024) {
   .main-form__wrapper {
     max-width: 585px;
+  }
+
+  .main-form__slogan {
+    margin-bottom: 35px;
+  }
+
+  .main-form__submit-button {
+    margin-right: 50px;
   }
 }

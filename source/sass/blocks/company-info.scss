@@ -38,7 +38,6 @@
   border-radius: 3px;
   padding: 10px 15px;
   color: #00B2FF;
-
   @extend %roboto-condensed-700;
   font-size: 14px;
   line-height: 15px;
@@ -63,8 +62,9 @@
 .company-info__logo-numbers {
   writing-mode: vertical-lr;
   @extend %roboto-condensed-700;
-  font-size: 150px;
+  font-size: 160px;
   line-height: 150px;
+  letter-spacing: 0.1px;
   background-image: url("../img/2022-background.webp");
   background-color: #00B2FF;
   background-position: center;
@@ -75,7 +75,7 @@
 
 @media (min-width: $vp-768) {
   .company-info__wrapper {
-    padding: 0 50px 80px;
+    padding: 0 50px 80px 62px;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -92,11 +92,16 @@
 
   .company-info__description-paragraph {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
   }
 
   .company-info__logo {
     display: block;
+  }
+
+  .company-info__toggle-button {
+    width: 180px;
+    padding: 15px 25px;
   }
 }
 
@@ -109,11 +114,11 @@
   }
 
   .company-info__description-list {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 
   .company-info__about {
-    margin-left: 60px;
+    margin-left: 80px;
   }
 }
 
