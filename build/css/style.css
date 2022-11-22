@@ -1113,11 +1113,8 @@ button,
 }
 
 .main-block {
-  background-blend-mode: multiply;
-  background-color: rgba(25, 32, 36, 0.5);
   background-image: url("../img/circuit-mobile.webp");
   background-size: cover;
-  background-position: 30%;
   background-repeat: no-repeat;
 }
 
@@ -1336,18 +1333,18 @@ button,
   position: relative;
   height: 250px;
   background-blend-mode: multiply;
-  background-color: rgba(4, 24, 39, 0.5);
-  background-image: url("../img/goods-services-mobile.webp");
-  background-size: 530%;
-  background-position: bottom 50% left 30%;
+  background-color: #C4C4C4;
+  background-image: url("../img/card-background-mobile-1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .goods-services__card:nth-of-type(2n) {
-  background-position: bottom 15% left 30%;
+  background-image: url("../img/card-background-mobile-2.webp");
 }
 
 .goods-services__card:nth-of-type(3n) {
-  background-position: bottom 36% right 28%;
+  background-image: url("../img/card-background-mobile-3.webp");
 }
 
 .goods-services__card::before {
@@ -1369,6 +1366,7 @@ button,
   width: 100%;
   height: 100%;
   padding: 25px 0 0 30px;
+  background-color: rgba(4, 24, 39, 0.5);
 }
 
 .goods-services__card-link:hover {
@@ -1590,6 +1588,7 @@ button,
   width: 100%;
   height: 100%;
   background-color: rgba(3, 16, 27, 0.7);
+  overflow: scroll;
   z-index: 10;
 }
 
@@ -1890,11 +1889,15 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 60px 0 50px;
+    padding: 0 63px 0 50px;
   }
 
   .main-footer__contacts-item {
     border: none;
+  }
+
+  .main-footer__links-group--one {
+    margin-bottom: 10px;
   }
 
   .main-footer__contacts-subtitle {
@@ -2034,16 +2037,15 @@ button,
   }
 
   .goods-services__card {
-    background-size: 235%;
-    background-position: bottom 15% left 32%;
+    background-image: url("../img/card-background-tablet-1.webp");
   }
 
   .goods-services__card:nth-of-type(2n) {
-    background-position: bottom 49% right 27%;
+    background-image: url("../img/card-background-tablet-2.webp");
   }
 
   .goods-services__card:nth-of-type(3n) {
-    background-position: bottom 40% left 20%;
+    background-image: url("../img/card-background-tablet-3.webp");
   }
 
   .goods-services__card::before {
@@ -2053,7 +2055,7 @@ button,
   }
 
   .goods-services__card-link {
-    padding: 40px 0 0 45px;
+    padding: 35px 0 0 45px;
   }
 
   .goods-services__card-subtitle {
@@ -2299,7 +2301,7 @@ button,
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 50px 100px;
+    padding: 0 50px 90px;
   }
 
   .company-info__description-list {
@@ -2333,16 +2335,15 @@ button,
     flex-grow: 1;
     height: 650px;
     margin-right: 20px;
-    background-size: 420%;
-    background-position: bottom 30% left 16%;
+    background-image: url("../img/card-background-desktop-1.webp");
   }
 
   .goods-services__card:nth-of-type(2n) {
-    background-position: bottom 30% left 48%;
+    background-image: url("../img/card-background-desktop-2.webp");
   }
 
   .goods-services__card:nth-of-type(3n) {
-    background-position: bottom 30% left 80%;
+    background-image: url("../img/card-background-desktop-3.webp");
   }
 
   .goods-services__card:last-of-type {
@@ -2420,6 +2421,7 @@ button,
 
   .main-footer__links-group--one {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -2469,16 +2471,8 @@ button,
     background-image: url("../img/plus-2x.webp");
   }
 
-  .main-block {
-    background-image: url("../img/circuit-mobile-2x.webp");
-  }
-
   .company-info__logo-numbers {
     background-image: url("../img/2022-background-2x.webp");
-  }
-
-  .goods-services__card {
-    background-image: url("../img/goods-services-mobile-2x.webp");
   }
 
   .feedback__paper-plane {

@@ -151,11 +151,15 @@
   .main-footer__contacts-list {
     display: flex;
     justify-content: space-between;
-    padding: 0 60px 0 50px;
+    padding: 0 63px 0 50px;
   }
 
   .main-footer__contacts-item {
     border: none;
+  }
+
+  .main-footer__links-group--one {
+    margin-bottom: 10px;
   }
 
   .main-footer__contacts-subtitle {
@@ -233,5 +237,6 @@
 
   .main-footer__links-group--one {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
