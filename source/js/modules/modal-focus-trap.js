@@ -1,4 +1,7 @@
-import * as focusTrap from 'focus-trap';
+import focusTrap from 'focus-trap-js';
 
-const trap = focusTrap.createFocusTrap('.main-modal__field');
-trap.activate();
+const modalWindow = document.querySelector('.main-modal');
+
+document.addEventListener('keydown', (evt) => {
+  focusTrap(evt, modalWindow);
+});
