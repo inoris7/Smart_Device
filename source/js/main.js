@@ -6,4 +6,3 @@ import './modules/modal-open-close';
 import './modules/phone-mask';
 import './modules/footer-accordion';
 import './modules/modal-focus-trap';
-import './modules/about-company-text-content';

@@ -31,6 +31,18 @@
   line-height: 18.82px;
 }
 
+.company-info__description-paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.company-info__mobile-hidden {
+  display: none;
+}
+
+.company-info__mobile-hidden--opened {
+  display: inline;
+}
+
 .company-info__toggle-button {
   width: 160px;
   background-color: inherit;
@@ -44,6 +56,7 @@
   letter-spacing: calc(1em / 20);
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .company-info__toggle-button:hover {
@@ -93,6 +106,10 @@
   .company-info__description-paragraph {
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .company-info__mobile-hidden {
+    display: inline;
   }
 
   .company-info__logo {

@@ -42,7 +42,8 @@
   .card {
     width: 320px;
     min-height: 360px;
-    padding: 40px 30px 35px 40px;
+    padding: 40px 30px 0 40px;
+    box-sizing: border-box;
   }
 
   .card__icon {
@@ -67,6 +68,12 @@
     max-width: 595px;
     width: auto;
     min-height: 300px;
-    padding: 40px 45px 35px;
+    padding: 43px 45px 35px 40px;
+  }
+
+  .card__subtitle {
+    font-size: 24px;
+    line-height: 33.75px;
+    margin-top: 15px;
   }
 }
